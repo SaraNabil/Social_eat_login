@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Social_eat_login</string>
+    <string name="login_welcome">Welcome</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="password">Password</string>
+    <string name="male">Male</string>
+    <string name="Female">Female</string>
+    <string name="signin"> Sign in</string>
+    <string name="dont_have_account">Do not have account ?</string>
+    <string name="signup">Sign up</string>
+</resources>

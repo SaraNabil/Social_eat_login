@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bachground"
+    tools:context=".SignupActivity">
+
+    <EditText
+        android:id="@+id/name_signup_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/EditText_height"
+        android:layout_marginStart="@dimen/layout_marginLeft_et"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/layout_marginRight_et"
+        android:background="@drawable/round_layout"
+        android:drawableStart="@drawable/name"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/transWhite"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textColorHint="@color/transWhite" />
+
+    <EditText
+        android:id="@+id/email_signup_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/EditText_height"
+        android:layout_below="@id/name_signup_et"
+        android:layout_marginStart="@dimen/layout_marginLeft_et"
+        android:layout_marginTop="@dimen/layout_marginTop_et"
+        android:layout_marginEnd="@dimen/layout_marginRight_et"
+        android:background="@drawable/round_layout"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/transWhite"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/transWhite" />
+
+    <EditText
+        android:id="@+id/pass_signup_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/EditText_height"
+        android:layout_below="@id/email_signup_et"
+        android:layout_marginStart="@dimen/layout_marginLeft_et"
+        android:layout_marginTop="@dimen/layout_marginTop_et"
+        android:layout_marginEnd="@dimen/layout_marginRight_et"
+        android:background="@drawable/round_layout"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/transWhite"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/transWhite" />
+
+    <EditText
+        android:id="@+id/address_signup_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/EditText_height"
+        android:layout_below="@id/pass_signup_et"
+        android:layout_marginStart="@dimen/layout_marginLeft_et"
+        android:layout_marginTop="@dimen/layout_marginTop_et"
+        android:layout_marginEnd="@dimen/layout_marginRight_et"
+        android:background="@drawable/round_layout"
+        android:drawableStart="@drawable/address"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/transWhite"
+        android:hint="@string/address"
+        android:inputType="text"
+        android:textColorHint="@color/transWhite" />
+
+    <EditText
+        android:id="@+id/phone_signup_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/EditText_height"
+        android:layout_below="@id/address_signup_et"
+        android:layout_marginStart="@dimen/layout_marginLeft_et"
+        android:layout_marginTop="@dimen/layout_marginTop_et"
+        android:layout_marginEnd="@dimen/layout_marginRight_et"
+        android:background="@drawable/round_layout"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/transWhite"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:textColorHint="@color/transWhite" />
+
+    <ImageView
+        android:id="@+id/gender_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_signup_et"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="@dimen/layout_marginTop_et"
+        android:paddingEnd="10dp"
+        android:src="@drawable/gender" />
+
+    <TextView
+        android:id="@+id/gender_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_signup_et"
+        android:layout_marginTop="@dimen/layout_marginTop_et"
+        android:layout_toEndOf="@id/gender_icon"
+        android:text="@string/gender"
+        android:textColor="#b1ffffff"
+        android:textSize="18sp" />
+    <RadioGroup
+        android:layout_marginTop="@dimen/layout_marginTop_et"
+        android:layout_toEndOf="@id/gender_tv"
+        android:layout_below="@id/phone_signup_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/male_radioButton"
+            android:background="@drawable/yourbuttonbackground"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textColor="#b1ffffff"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/female_radioButton"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/yourbuttonbackground"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Female"
+            android:textColor="#b1ffffff"
+            android:textSize="16sp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layout_marginTop_et"
+        android:background="@drawable/round_button"
+        android:elevation="5dp"
+        android:text="@string/signup"
+        android:textColor="@color/text_white" />
+
+
+</RelativeLayout>
