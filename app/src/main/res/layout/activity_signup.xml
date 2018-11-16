@@ -16,10 +16,10 @@
         android:background="@drawable/round_layout"
         android:drawableStart="@drawable/name"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/transWhite"
+        android:drawableTint="@color/text_white"
         android:hint="@string/name"
         android:inputType="text"
-        android:textColorHint="@color/transWhite" />
+        android:textColorHint="@color/text_white" />
 
     <EditText
         android:id="@+id/email_signup_et"
@@ -32,10 +32,10 @@
         android:background="@drawable/round_layout"
         android:drawableStart="@drawable/email"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/transWhite"
+        android:drawableTint="@color/text_white"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:textColorHint="@color/transWhite" />
+        android:textColorHint="@color/text_white" />
 
     <EditText
         android:id="@+id/pass_signup_et"
@@ -48,10 +48,10 @@
         android:background="@drawable/round_layout"
         android:drawableStart="@drawable/password"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/transWhite"
+        android:drawableTint="@color/text_white"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:textColorHint="@color/transWhite" />
+        android:textColorHint="@color/text_white" />
 
     <EditText
         android:id="@+id/address_signup_et"
@@ -64,10 +64,10 @@
         android:background="@drawable/round_layout"
         android:drawableStart="@drawable/address"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/transWhite"
+        android:drawableTint="@color/text_white"
         android:hint="@string/address"
         android:inputType="text"
-        android:textColorHint="@color/transWhite" />
+        android:textColorHint="@color/text_white" />
 
     <EditText
         android:id="@+id/phone_signup_et"
@@ -80,10 +80,10 @@
         android:background="@drawable/round_layout"
         android:drawableStart="@drawable/phone"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/transWhite"
+        android:drawableTint="@color/text_white"
         android:hint="@string/phone"
         android:inputType="phone"
-        android:textColorHint="@color/transWhite" />
+        android:textColorHint="@color/text_white" />
 
     <ImageView
         android:id="@+id/gender_icon"
@@ -106,6 +106,7 @@
         android:textColor="#b1ffffff"
         android:textSize="18sp" />
     <RadioGroup
+        android:id="@+id/gender_radioGroup"
         android:layout_marginTop="@dimen/layout_marginTop_et"
         android:layout_toEndOf="@id/gender_tv"
         android:layout_below="@id/phone_signup_et"
@@ -136,6 +137,7 @@
     </RadioGroup>
 
     <Button
+        android:onClick="createNewAccount"
         android:id="@+id/signin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
